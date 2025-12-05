@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Karan Sharma - Portfolio</title>
+
+<link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR (HIDDEN BEFORE LOGIN) -->
+    <div class="sidebar" id="sidebar">
+        <img src="https://media.istockphoto.com/id/1457353108/photo/computer-hacker.jpg?s=612x612&w=0&k=20&c=h40R0Kikw8QAFIAM5Bz8Ixygeycoqhnkvai1ENJEIYQ=" alt="Profile">
+
+        <h2>Karan Sharma</h2>
+        <p>B.Tech CSE • Cyber Security Enthusiast</p>
+
+        <button class="nav-btn" onclick="openPage('homePage')">Home</button>
+        <button class="nav-btn" onclick="openPage('knowPage')">About Me</button>
+        <button class="nav-btn" onclick="openPage('hobbyPage')">Hobbies</button>
+        <button class="nav-btn" onclick="openPage('contactPage')">Contact</button>
+    </div>
+
+    <div class="content">
+
+        <!-- LOGIN PAGE -->
+        <div id="loginPage" class="page active fade">
+            <h1>Login</h1>
+            <input type="text" id="loginUser" placeholder="Enter Username"><br>
+            <input type="password" id="loginPass" placeholder="Enter Password"><br>
+            <button class="btn" onclick="login()">Login</button>
+        </div>
+
+        <!-- HOME PAGE -->
+        <div id="homePage" class="page fade">
+            <h1>Hi, I’m Karan Sharma 👋</h1>
+            <p>I’m a B.Tech CSE student specializing in Cyber Security.<br>
+            I enjoy ethical hacking, AI, coding, and technology.</p>
+        </div>
+
+        <!-- ABOUT PAGE -->
+        <div id="knowPage" class="page fade">
+            <h1>About Me</h1>
+            <p>I am passionate about Cyber Security, Ethical Hacking and Machine Learning.</p>
+
+            <h2 style="color:#00eaff;">My Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Python</li>
+                <li>C Programming</li>
+            </ul>
+        </div>
+
+        <!-- HOBBIES PAGE -->
+        <div id="hobbyPage" class="page fade">
+            <h1>My Hobbies</h1>
+            <ul>
+                <li>Reading Books</li>
+                <li>Coding</li>
+                <li>Playing Cricket</li>
+                <li>Listening to Music</li>
+                <li>Travelling</li>
+                <li>Photography</li>
+            </ul>
+        </div>
+
+        <!-- CONTACT PAGE -->
+        <div id="contactPage" class="page fade">
+            <h1>Contact Me</h1>
+            <input type="text" placeholder="Your Name"><br>
+            <input type="email" placeholder="Your Email"><br>
+            <textarea placeholder="Your Message"></textarea><br>
+            <button class="btn">Send Message</button>
+        </div>
+
+    </div>
+
+     <script src="login.js"></script>  
+
+</body>
+</html>
